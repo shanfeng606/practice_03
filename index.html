@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="registry">
+        <!-- 导航栏 -->
+        <header>
+            <div class="header_wrap">
+                <div class="header_logo">高铁客户服务中心<span> | </span><span>客户服务</span></div>
+                <nav>
+                    <span>意见反馈</span>
+                    <a href="#">163.com</a>
+                    <span>您好，请</span>
+                    <a href="#">登录</a>
+                    <span>|</span>
+                    <a href="#">注册</a>
+                    <div class="menu">
+                        <span>我的IMOOC</span>
+                        <ul class="menu-list">
+                            <li>我的账户</li>
+                            <li>已完成订单（改/退）</li>
+                            <li>我的保险</li>
+                            <li>查看个人信息</li>
+                            <li>账户安全</li>
+                            <li>常用联系人</li>
+                            <li>重点旅客预约</li>
+                            <li>遗失物品查找</li>
+                        </ul>
+                    </div>
+                    <div class="arrow"></div>
+                </nav>
+                <div class="phone">
+                    <a href="#">手机版</a>
+                </div>  
+            </div>
+        </header>
+        <!-- 表单栏 -->
+        <div class="content">
+            <h2>您现在的位置：<span>客运首页 > 注册</span></h2>
+            <div class="box">
+                <h2>账户信息</h2>
+                <form action="">          
+                    <P><span>*</span><span>用户名：</span>
+                        <input type="text" id="userName" placeholder="用户名设置成功后不可更改">&nbsp;&nbsp;
+                        <span class="prompt"></span></P>
+
+                    <P><span>*</span><span>登录密码：</span>
+                        <input type="password" id="pwd" placeholder="6-20位字母、数字或符号">&nbsp;&nbsp;
+                        <span class="safe1" id="safe1"></span>&nbsp;
+                        <span class="safe2" id="safe2"></span>&nbsp;
+                        <span class="safe3" id="safe3"></span>&nbsp;
+                        <span class="prompt prompt_1"></span>
+                    </P>
+
+                    <P><span>*</span><span>确认密码：</span>
+                        <input type="password" id="comfirmPwd" placeholder="再次输入您的登录密码">&nbsp;&nbsp;
+                        <span class="prompt"></span></P>
+
+                    <P><span>*</span><span>姓&nbsp;&nbsp;&nbsp;名：</span>
+                        <input type="text" id="name1" placeholder="请输入姓名">&nbsp;&nbsp;
+                        <span class="prompt nameRule">
+                            <a href="#">姓名填写规则</a>
+                            <span class="nameRule_text">
+                                1.确认姓名中生僻字无法输入时，可用生僻字拼音或同音字替代。<br>
+                                2.输入姓名保存后，遇有系统无法正确显示的汉字，可用该汉字的拼音或同音字重新修改后保存。
+                                3.姓名中有繁体字无法输入时，可用简体替代。<br>
+                                4.姓名较长，汉字与英文字符合计超过30个（1个汉字算2个字符）的，需按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符（空格字符不输入），其中英文字符输入时不区别大小写
+                            </span>
+                        </span>
+                    </P>
+
+                    <P><span>*</span><span>证件类型：</span>
+                        <select name="credit" id="idType">
+                            <option value="二代身份证">二代身份证</option>
+                            <option value="二代身份证">港澳通行证</option>
+                            <option value="二代身份证">台湾通行证</option>
+                            <option value="二代身份证">护照</option>
+                        </select>&nbsp;&nbsp;
+                        <span ></span></P>
+
+                    <P><span>*</span><span>证件号码：</span>
+                        <input type="text" id="idNum" placeholder="请输入您的证件号码">&nbsp;&nbsp;
+                        <span class="prompt"></span></P>
+
+                    <P><span></span><span>邮&nbsp;&nbsp; 箱：</span>
+                        <input type="email" id="email" placeholder="请正确填写邮箱地址">&nbsp;&nbsp;
+                        <span class="prompt"></span></P>
+
+                    <P><span>*</span><span>手机号码：</span>
+                        <input type="text" id="telNumber" placeholder="请输入您的手机号码">&nbsp;&nbsp;
+                        <span class="prompt"></span></P>
+
+                    <P><span>*</span><span>旅客类型：</span>
+                        <select name="people" id="people">
+                            <option value="成人">成人</option>
+                            <option value="儿童">儿童</option>
+                            <option value="学生">学生</option>
+                            <option value="残疾军人">残疾军人</option>
+                            <option value="伤残人民警察">伤残人民警察</option>
+                        </select>&nbsp;&nbsp;
+                        <span class="prompt"></span></P>
+
+                    <p><input type="checkbox" id="checkbox">我已阅读并同意遵守    <a href="">《中国铁路客户服务中心网站服务条款》</a></p>
+                    <input type="submit" id="sub" value="下一步">
+                </form>
+            </div>
+        </div>
+        <!-- 页脚 -->
+        <footer>
+            <p>关于我们&nbsp;&nbsp;|&nbsp;&nbsp;网站声明</p>
+            <p>Copyright © 2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+        </footer>
+        
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

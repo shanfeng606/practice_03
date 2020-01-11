@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.registry{
+    width: 100%;
+    height:120px ;
+    font-family: "Microsoft Yahei";
+}
+/* 导航栏 */
+header{
+    position: relative;
+    background: #efefef;
+    border-bottom:#2487c9 2px solid;
+    z-index: 10;
+}
+.header_wrap{ 
+    position: relative;
+    width: 1260px;
+    height: 120px;
+    margin: 0 auto;   
+}
+.header_logo{
+    position: absolute;
+    display: inline-block;
+    width: 460px;
+    height: 100px;
+    background: url(../img/logo.png) left center no-repeat;
+    line-height: 100px;
+    font-size: 24px;
+    text-indent: 120px;
+    top:10px;
+}
+.header_logo>span:first-child{
+    font-size:28px;
+    font-weight: bolder;
+}
+.header_logo>span:last-child{
+    font-size:20px;
+    color:#66667b;
+}
+.header_logo>a:nth-child(2),.header_logo>a:nth-child(2){
+    color:#fb7403;
+}
+/* 导航条 */
+nav{
+    position: absolute;
+    right:100px;
+    font-size: 16px;
+    line-height: 120px;
+    width: 480px;
+}
+nav>a:nth-child(2),nav>a:nth-child(4){
+    color:#fb7403;
+}
+nav>a{
+    padding: 10px;
+}
+.menu{
+    display: inline-block;
+    position: relative;
+    padding: 0px 0 0 10px;
+}
+.menu-list{
+    display: none;
+    position: absolute;
+    border: 2px solid orange;
+    background: #fff;
+    top:80px;
+    left:0;
+    padding: 0 10px;
+}
+.menu-list li{
+    width: 160px;
+    color: #bbb;
+    list-style: none;
+    line-height: 35px;
+    border-bottom: #a19999 1px dotted;
+}
+.menu-list li:hover{
+    color: #fb7403;
+    cursor: pointer;
+}
+.menu-list li:last-child{
+    border-bottom:none;
+}
+.menu:hover .menu-list{
+    display:block;
+}
+
+/* 小箭头 */
+.arrow{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top:55px;
+    right: 0px;
+}
+
+
+.phone{
+    position: absolute;
+    right:0px;
+    display: inline-block;
+    width: 76px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(../img/未标题-1.png) left  no-repeat;
+    background-size:auto 100%;
+    top:48px;
+    text-indent: 24px;
+}
+
+/* 表单栏 */
+.content{
+    height: 800px;
+    width: 1260px;
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+    
+}
+.content>h2{
+    font-size:18px;
+    line-height: 45px;
+}
+.content>h2>span{
+    font-size:18px;
+    color:#636363;
+    font-weight: lighter;  
+}
+.box{
+    width: 1260px;
+    border:#fb7403 solid 2px;
+    border-radius: 10px;
+}
+form{
+    /* width:1256px; */
+    height: 630px;
+    width: 840px;
+    margin: 0 auto;
+}
+.box h2{
+    width: 1256px;
+    font-size: 20px;
+    line-height: 40px;
+    background: #fb7403;
+    border:#fb7403 solid 2px;
+    border-radius: 5px;
+    color:#fff;
+    text-indent: 18px;
+}
+form>p{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px 0;
+    height: 24px;
+    position: relative;
+}
+form>p:first-of-type{
+    margin-top: 54px;
+}
+
+
+form>p>span:nth-child(1){
+    color: red;
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    
+}
+form>p>span:nth-child(2){
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    text-align-last: justify;
+    
+}
+form>p>.prompt{
+    display: inline-block;
+    width: 390px;
+    text-align: left;
+}
+form input,form select{
+    display: inline-block;
+    width: 210px;
+    height: 20px;
+}
+/* 密码强弱 */
+.safe1,.safe2,.safe3{
+    /* display: inline-block; */
+    height: 8px;
+    width: 30px;
+    vertical-align: middle;
+    display: none;
+}
+.safe1{
+    background: red;
+}
+.safe2{
+    background: orange;
+}
+
+.safe3{
+    background: green;
+}
+.prompt_1{
+    height: 24px;;
+    line-height: 30px;
+    display: block;
+    position: absolute;
+    left:183px;
+    top:20px;
+}
+/* 姓名填写规则 */
+.nameRule{
+    position: absolute;
+    display: inline-block;
+    
+}
+.nameRule a{
+    color:#fb7403;
+    text-decoration: underline;
+}
+.nameRule_text{
+    position:absolute;
+    display: none;
+    height: 160px;
+    width:500px;
+    top:20px;
+    left:85px;
+    padding: 5px;
+    border: 1px rgb(70,156,213) solid;
+    color:rgb(108,108,108);
+}
+.nameRule:hover .nameRule_text{
+    display:block;
+}
+
+
+/* 我已阅读并同意遵守 */
+form>p:last-of-type{
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 50px;
+
+}
+input[type=checkbox]{
+    width: auto;
+    left: 100px;
+}
+#checkbox{
+    height: 18px;
+    width: 18px;
+}
+/* 下一步 */
+input[type=submit]{
+    width: 230px;
+    height:38px;
+    color:#fff;
+    background:#fb7403;
+    border: none;
+    border-radius: 5px;
+    margin-top: 64px;
+    margin-left: 200px;
+}
+/* 页脚 */
+footer{
+    color:#a19999;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background: #dcdcdc;
+    border-top:#2487c9 2px solid;
+    padding-top: 20px;
+    
+}
+footer>p{
+    font-size: 16px;
+    line-height:25px;
+}
+
+
+
+
